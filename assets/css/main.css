@@ -111,7 +111,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: Manrope, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -172,7 +172,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #514bff;
-		font-weight: bold;
+		font-weight: 400;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
 	}
@@ -185,7 +185,6 @@ input, select, textarea {
 	section#one h1, section#one h2,section#one h3,section#one h4,section#one h5,section#one h6 
 	section#two h1, section#two h2,section#two h3,section#two h4,section#two h5,section#two h6{
 		color: white;
-		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
 	}
@@ -1869,6 +1868,17 @@ input, select, textarea {
 		white-space: nowrap;
 	}
 
+	.center {
+		margin: 0;
+		position: absolute;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	[id="mainLogo"] .center {
+		  /* top: 82%; */
+		  left: 61%;
+
+	  }
 		input[type="submit"]:after,
 		input[type="reset"]:after,
 		input[type="button"]:after,
@@ -2640,6 +2650,15 @@ input, select, textarea {
 		padding: 10%;
 		}
 
+		#mainLogo {
+			text-align: center;
+			margin-left: 10%;
+			margin-bottom: 7%;
+			width: 60%
+			
+			
+		}
+
 /* List */
 
 	ol {
@@ -2655,11 +2674,11 @@ input, select, textarea {
 	ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
+		/* padding-left: 1em; */
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			/* padding-left: 0.5em; */
 		}
 
 		ul.alt {
@@ -2705,7 +2724,7 @@ input, select, textarea {
 	}
 
 		ul.actions li {
-			padding: 0 0 0 1em;
+			/* padding: 0 0 0 1em; */
 			vertical-align: middle;
 		}
 
@@ -3899,15 +3918,17 @@ input, select, textarea {
 
 /* Intro */
 
+@media (min-width: 736px) {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("../../images/notebook.jpg");
-		background-position: top right;
+		background-image: url("../../images/screen.jpg");
+		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		background-size: auto;
 		opacity: 0.85;
 	}
+}
 
 		#intro p {
 			font-size: 1.25em;
@@ -3939,6 +3960,9 @@ input, select, textarea {
 
 	section#intro div {
 		padding-left: 18%;
+		@media screen and (max-width: 980px){
+			padding-top: 2em;
+		}
 	}
 	
 		
